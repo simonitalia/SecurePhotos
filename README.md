@@ -45,7 +45,7 @@ Self challenge
 
 # Project goals / instructions
 
-• Make your own app, starting from a blank canvas.</br>
+- Your final challenge is to create a private photos app – think Mission Impossible, or at least as close as you can get to it in a programming tutorial! The Notes app for iOS has the ability to lock certain notes so that Touch ID must be used to reveal the note, and your mission is to create something similar for a photo library.
 
 - At its most basic, you’re going to want to start your app with something like project 10: a collection view, plus the ability to load images. 
 - In the wrap up for that chapter, I mentioned using picker.sourceType = .camera, and here’s your chance to use it so that users can take photos straight to their private library.
