@@ -9,12 +9,12 @@
 import UIKit
 
 //NSObject to write and read from disk
-class Photo: NSObject {
+class Photo: NSObject, Codable {
     
-    var image: UIImage
+    var image: String
     var label: String
     
-    init(image: UIImage, label: String) {
+    init(image: String, label: String) {
         self.image = image
         self.label = label
     }

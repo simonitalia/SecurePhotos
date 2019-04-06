@@ -14,7 +14,8 @@ class PhotoCell: UICollectionViewCell {
     //Storyboard / IBOutlet properties
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var label: UILabel!
-    
 
 }
+
+
 

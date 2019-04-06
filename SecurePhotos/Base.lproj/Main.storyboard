@@ -16,9 +16,9 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="vSq-Om-TYP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pd1-vx-f2f">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="140" height="180"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -31,7 +31,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="140" height="180"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbo-LB-v6e">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbo-LB-v6e">
                                             <rect key="frame" x="10" y="10" width="120" height="120"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -39,15 +39,16 @@
                                             <rect key="frame" x="10" y="140" width="120" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="customSize" width="140" height="180"/>
                                 <connections>
-                                    <outlet property="imageView" destination="fbo-LB-v6e" id="dPU-Bt-MEa"/>
-                                    <outlet property="label" destination="ahx-mA-uVM" id="Stm-fU-TSB"/>
+                                    <outlet property="imageView" destination="fbo-LB-v6e" id="OOR-T5-lfW"/>
+                                    <outlet property="label" destination="ahx-mA-uVM" id="KeH-e8-0rZ"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -59,10 +60,14 @@
                     <navigationItem key="navigationItem" id="XkM-jH-8Y4">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="lOf-6B-Cjb">
                             <connections>
-                                <action selector="addButtonPressed:" destination="pPO-5W-NfK" id="9yo-us-Ior"/>
+                                <action selector="addButtonTapped:" destination="pPO-5W-NfK" id="9yo-us-Ior"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="kiu-1X-fV8"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="kiu-1X-fV8">
+                            <connections>
+                                <action selector="cameraButtonTapped:" destination="pPO-5W-NfK" id="lc6-MK-YMJ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRa-wZ-8ey" userLabel="First Responder" sceneMemberID="firstResponder"/>
