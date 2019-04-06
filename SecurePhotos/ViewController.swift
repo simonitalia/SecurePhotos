@@ -316,7 +316,10 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
             
             //If password exists
             let alertController = UIAlertController(title: "Enter app password", message: nil, preferredStyle: .alert)
-            alertController.addTextField()
+            alertController.addTextField { textField in
+                textField.isSecureTextEntry = true
+                
+            }
             
             let submitAction = UIAlertAction(title: "Submit", style: .default) {
                 [unowned self, alertController] (action: UIAlertAction) in
@@ -344,7 +347,10 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
         //If password doesn't exist, create alert to prompt user to create new password
         } else {
             let alertController = UIAlertController(title: "Create app password", message: nil, preferredStyle: .alert)
-            alertController.addTextField()
+            alertController.addTextField { textField in
+                textField.isSecureTextEntry = true
+                
+            }
             
             let submitAction = UIAlertAction(title: "Submit", style: .default) {
                 [unowned self, alertController] (action: UIAlertAction) in
